@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人首頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: darkseagreen;
+        }
+        main {
+            max-width: 1000px;
+            margin:20px auto;
+            padding: 10px;
+            background-color: gray;
+        }
+        section {
+            max-width: 1000px;
+            margin: 5px auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .basic-info {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .basic-info img {
+            margin-right: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .info-text {
+            line-height: 1.8; /* 調整行距 */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>楊孟勳的個人首頁</h1>
+    </header>
+
+    <nav>
+        <a href="#basic-info">基本資料</a>
+        <a href="#education">學習經歷</a>
+    </nav>
+
+    <main>
+        <section id="basic-info" class="basic-info">
+            <img src="head.jpg" alt="個人照片" width="210" height="270"/>
+            <div class="info-text">
+                <h2>基本資料</h2>
+                <p><strong>年齡：</strong>20 歲</p>
+                <p><strong>星座：</strong>天蠍座</p>
+                <p><strong>生日：</strong>2003 年 11 月 22 日</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>學習經歷</h2>
+            <section>
+                <h3>平和國小</h3>
+                <p>曲棍球校隊</p>
+            </section>
+            <section>
+                <h3>陽明交通大學</h3>
+                <p>系級：115</p>
+                <p>專業：應用數學系</p>
+                <p>經歷：目前在學大三生</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 個人網站設計
+    </footer>
+</body>
+</html>
